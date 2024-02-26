@@ -1,0 +1,27 @@
+{
+  "name": "app-cli",
+  "version": "1.0.0",
+  "description": "cli ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "bin": {
+    "getcli": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chubahay/app-cli.git"
+  },
+  "author": "Charlie Rogers",
+  "bugs": {
+    "url": "https://github.com/chubahay/app-cli/issues"
+  },
+  "homepage": "https://github.com/chubahay/app-cli#readme",
+  "dependencies": {
+    "@types/node": "^20.11.20",
+    "@types/yargs": "^17.0.32",
+    "typescript": "^5.3.3",
+    "yargs": "^17.7.2"
+  }
+}
