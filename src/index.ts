@@ -1,12 +1,14 @@
 #! /usr/bin/env node
-import { maxHeaderSize } from 'http'
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
-import inquirer  from 'inquirer';
+import { getEnvironmentUrl } from './utils/utils'
 
 yargs(hideBin(process.argv))
-  .command('get', 'get some environment url', () => {
+  .command('get', 'get some environment url', async () => {
+    await getEnvironmentUrl()
   })
   .demandCommand(1)
   .parse()
 
+
+  
