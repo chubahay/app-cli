@@ -2,7 +2,8 @@
     "compilerOptions": {
       "module": "CommonJS",
       "noImplicitAny": true,
+      "outDir": "./bin",
     },
-    "include": ["bin/**/*"],
+    "include": ["src/**/*"],
     "exclude": ["node_modules", "**/*.spec.ts"]
   }
