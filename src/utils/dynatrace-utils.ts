@@ -2,12 +2,11 @@ import { select } from '@inquirer/prompts';
 import { dynatraceUrls } from '../data/dynatrace-env';
 
 
-const envChoices = [
-    { name: 'dev', value: 'dev' },
-    { name: 'test', value: 'test' },
-    { name: 'preprod', value: 'preprod' },
-    { name: 'prod', value: 'prod' },
-]
+const envChoices = [] as any
+
+for (const key in dynatraceUrls) {
+    envChoices.push({ name: key, value: key })
+}
 
 export const getDynatraceUrl = async () => {
 
